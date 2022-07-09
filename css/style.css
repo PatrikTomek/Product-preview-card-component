@@ -1,0 +1,104 @@
+body {
+  width: 1440px;
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1,
+.description,
+button {
+  font-family: Montserrat;
+}
+
+.main-header,
+.original-price,
+.current-price {
+  font-family: Fraunces;
+}
+
+.container {
+  position: relative;
+  top: 150px;
+  left: 50%;
+  margin-left: -116px;
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  border-radius: 10px;
+}
+
+.desktop-img {
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.desktop-img,
+.container {
+  height: 440px;
+}
+
+.description-container {
+  position: relative;
+  top: -5px;
+  bottom: 10px;
+  width: 240px;
+  float: right;
+  margin: 30px;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.main-header {
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.description {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  float: left;
+  margin-top: 20px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  float: right;
+  margin-top: 27px;
+  margin-right: 40px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 240px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  position: relative;
+  bottom: 7px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(160, 38%, 21%);
+}
+.cart {
+  position: relative;
+  float: left;
+  top: 15px;
+}
