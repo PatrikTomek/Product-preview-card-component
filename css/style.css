@@ -16,10 +16,10 @@ button {
 }
 
 .container {
-  position: relative;
+  position: absolute;
   top: 150px;
   left: 50%;
-  margin-left: -116px;
+  margin-left: -300px;
   background-color: hsl(0, 0%, 100%);
   width: 600px;
   border-radius: 10px;
@@ -29,6 +29,9 @@ button {
   float: left;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+.mobile-img {
+  display: none;
 }
 
 .desktop-img,
@@ -84,7 +87,7 @@ button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   height: 45px;
   width: 240px;
   font-weight: 700;
@@ -97,8 +100,56 @@ button:hover {
   cursor: pointer;
   background-color: hsl(160, 38%, 21%);
 }
-.cart {
+.cart-icon {
   position: relative;
   float: left;
-  top: 15px;
+  left: 53px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 975px) {
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: flex;
+    width: 380px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .container {
+    width: 380px;
+    height: 685px;
+    top: 50px;
+    margin-left: -200px;
+    border-radius: 10px;
+  }
+  .description-container {
+    width: 320px;
+    top: -12px;
+  }
+  .description {
+    margin-top: -5px;
+  }
+  .main-header {
+    font-size: 37px;
+    margin-top: 15px;
+    line-height: 36px;
+  }
+  .current-price {
+    margin-top: 35px;
+    font-size: 35px;
+  }
+  .original-price {
+    margin-top: 46px;
+    margin-right: 97px;
+  }
+  button {
+    width: 320px;
+    height: 53px;
+  }
+  .cart-icon {
+    left: 90px;
+  }
 }
